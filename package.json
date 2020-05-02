@@ -1,0 +1,22 @@
+{
+  "name": "save-ip-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gndw/save-ip-app.git"
+  },
+  "author": "Andrian Gandawida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gndw/save-ip-app/issues"
+  },
+  "homepage": "https://github.com/gndw/save-ip-app#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7"
+  }
+}
