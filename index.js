@@ -15,7 +15,7 @@ app.get('/submit', (req, res) => {
     
     collection.insertOne(
         { 
-            ip: req.ip,
+            headers: req.headers,
             time:time.toString(),
             utcTime:time.toUTCString(),
             idTime:time.toLocaleString('id')
