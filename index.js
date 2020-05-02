@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const PORT = process.env.PORT || 5000;
 
 const MongoClient = require('mongodb').MongoClient;
@@ -8,7 +9,7 @@ const mongoClient = new MongoClient(uri, { useUnifiedTopology: true, useNewUrlPa
 const app = express();
 app.get('/', (req, res) => res.send('OK'));
 
-app.get('/submit', (req, res) => {
+app.get('/submit', cors(), (req, res) => {
     
     const collection = mongoClient.db("general").collection("listing");
     const time = new Date(Date.now());
